@@ -1,0 +1,146 @@
+/* Ajuste para o container principal */
+.container {
+    margin-left: 250px; /* A mesma largura da sidebar */
+    padding: 20px 40px 20px 24px;
+    transition: margin-left 0.3s ease; /* Adiciona uma transição suave para o deslocamento */
+}
+
+/* Certifica-se de que o conteúdo principal ocupe todo o espaço disponível */
+.container .main {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Ocupa o restante da tela disponível */
+}
+
+
+.container .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.container .nav .search {
+    display: flex;
+    align-items: center;
+    background: #f2f2f2;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.container .nav .search input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: transparent;
+    padding-left: 36px;
+}
+
+.container .nav .search i {
+    position: absolute;
+    font-size: 23px;
+    padding: 6px;
+    color: #111;
+}
+
+textarea:focus, input:focus {
+    color: #111;
+}
+
+input, select, textarea{
+    color: #000;
+}
+
+.container .nav > button {
+    background: #111;
+    color: #fafafa;
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.container .nav > button#menuToggle {
+    display: none;
+    padding: 6px;
+    font-size: 22px;
+}
+
+.container .nav > i {
+    font-size: 20px;
+    background: #f2f2f2;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.container .main {
+    display: flex;
+}
+
+.container .main .content {
+    flex: 9;
+}
+
+.container .main .content .header {
+    margin-top: 20px;
+}
+
+.container .main .content .header h4 span {
+    font-size: 13px;
+    color: #a4a8ac;
+    font-weight: 500;
+}
+
+.container .main .content .header p{
+    margin-top: 8px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.container .main .content .Comunit-cards {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+
+.container .main .content .Comunit-cards .card {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 12px;
+    border: 2px solid #818080;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.container .main .content .Comunit-cards .card:hover {
+    box-shadow: none;
+
+}
+
+.container .main .content .Comunit-cards .card .card-header { 
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .main .content .Comunit-cards .card .card-header > i {
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.container .main .content .Comunit-cards .card .card-header > i:hover {
+    color: #111;
+}
+
+.container .main .content .Comunit-cards .card .card-desc {
+    font-size: 13px;
+    color: #a4a8ac;
+    line-height: 18px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: calc(18px * 3);
+
+}

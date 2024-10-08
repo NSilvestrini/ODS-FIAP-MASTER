@@ -1,0 +1,38 @@
+.NomeDaPagina {
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.columns {
+  display: flex; 
+  justify-content: space-between;
+}
+
+.content {
+    width: 80%;
+    padding: 20px;
+  }
+  
+  .card {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 12px;
+    border: 2px solid #818080;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th, table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #5f5e5e;
+  }
